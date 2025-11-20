@@ -1,6 +1,9 @@
 # Automated-Abdominal-Organ-Classification-with-CNNs
-A deep learning pipeline for classifying 11 abdominal organs from CT scan slices using PyTorch and Streamlit deployment.
 
+A deep learning pipeline for classifying 11 abdominal organs from CT scan slices using PyTorch and Streamlit deployment.
+---
+
+![Sample Images](https://github.com/Uzo-Hill/Automated-Abdominal-Organ-Classification-with-CNNs/blob/main/project%20image/Cover_Image.jpg)
 ---
 ## Project Overview
 
@@ -132,7 +135,7 @@ def visualize_samples(dataset, title="Dataset Samples"):
 visualize_samples(train_dataset, "OrganAMNIST Training Samples")
 ```
 
-![Sample Images](path/to/your/image.png)
+![Sample Images](https://github.com/Uzo-Hill/Automated-Abdominal-Organ-Classification-with-CNNs/blob/main/project%20image/Image_Samples.PNG)
 
 ---
 ## CNN Model Architecture
@@ -294,7 +297,7 @@ train_losses, val_accuracies = train_simple_model(
     model, train_loader, val_loader, criterion, optimizer, epochs=20
 )
 ```
-👉 Insert training output here.
+![Sample Images](https://github.com/Uzo-Hill/Automated-Abdominal-Organ-Classification-with-CNNs/blob/main/project%20image/Training.PNG)
 
 
 ---
@@ -310,8 +313,8 @@ The model converged smoothly:
 
 - Stable gradient flow
 
-👉 Insert loss/accuracy plots here:
-![Training Loss&vaidation accuracy](path/to/loss_plot.png)
+
+![Training Loss&vaidation accuracy](https://github.com/Uzo-Hill/Automated-Abdominal-Organ-Classification-with-CNNs/blob/main/project%20image/Loss_Validation_Accuracy.PNG)
 ---
 
 ## Model Evaluation
@@ -320,8 +323,10 @@ The best model was loaded and tested on unseen data.
 
 Test Accuracy: 91.62%
 
-👉 Insert classification report screenshot/output here
-👉 Insert confusion matrix plot here
+![Training Loss&vaidation accuracy](https://github.com/Uzo-Hill/Automated-Abdominal-Organ-Classification-with-CNNs/blob/main/project%20image/Classification_Report.PNG)
+
+
+![Training Loss&vaidation accuracy](https://github.com/Uzo-Hill/Automated-Abdominal-Organ-Classification-with-CNNs/blob/main/project%20image/Confusion_Matrix.PNG)
 
 ---
 
