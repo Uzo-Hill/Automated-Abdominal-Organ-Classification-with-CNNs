@@ -83,10 +83,18 @@ class SimpleOrganCNN(nn.Module):
 
 @st.cache_resource
 def load_model():
-    """Load the trained model with caching"""
     try:
         model = SimpleOrganCNN(num_classes=11)
-        model.load_state_dict(torch.load('best_organ_model.pth', map_location='cpu'))
+        
+        # Load with updated PyTorch compatibility
+        checkpoint = torch.load('best_organ_model.pth', map_location='cpu')
+        
+        # Handle both state_dict and full checkpoint formats
+        if 'model_state_dict' in checkpoint:
+            model.load_state_dict(checkpoint['model_state_dict'])
+        else:
+            model.load_state_dict(checkpoint)
+            
         model.eval()
         return model
     except Exception as e:
@@ -283,4 +291,5 @@ def main():
                 caption="Reference: Human organ locations in axial view", use_column_width=True)
 
 if __name__ == "__main__":
+
     main()
