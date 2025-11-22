@@ -305,9 +305,9 @@ train_losses, val_accuracies = train_simple_model(
 
 The model converged smoothly:
 
-- Loss: 0.218 → 0.013
+- Loss: 0.6375 → 0.0135
 
-- Validation Accuracy: 96.8% → 98.15%
+- Validation Accuracy: 95.59% → 98.41%
 
 - Minimal overfitting
 
@@ -321,7 +321,7 @@ The model converged smoothly:
 
 The best model was loaded and tested on unseen data.
 
-Test Accuracy: 91.62%
+Test Accuracy: 90.12%
 
 ![Training Loss&vaidation accuracy](https://github.com/Uzo-Hill/Automated-Abdominal-Organ-Classification-with-CNNs/blob/main/project%20image/Classification_Report.PNG)
 
@@ -372,7 +372,7 @@ Deployment: Streamlit Community Cloud with GitHub integration
 
 This project demonstrates a full, professional deep-learning workflow for medical image classification, achieving:
 
-- High accuracy (91.62%)
+- High accuracy (90.12%)
 - Robust CNN architecture
 - Strong generalization
 - Scalable deployment pipeline
