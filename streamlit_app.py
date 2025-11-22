@@ -292,7 +292,7 @@ def main():
         with st.expander("📊 Performance Metrics"):
             col_metric1, col_metric2, col_metric3 = st.columns(3)
             with col_metric1:
-                st.metric("Overall Accuracy", "91.62%")
+                st.metric("Overall Accuracy", "90.12%")
             with col_metric2:
                 st.metric("Best Class", "Liver - 97%")
             with col_metric3:
@@ -316,3 +316,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
