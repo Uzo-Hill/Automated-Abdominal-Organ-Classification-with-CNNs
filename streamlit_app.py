@@ -163,7 +163,7 @@ def main():
         st.header("📊 Model Information")
         st.info("""
         **Model Performance:**
-        - Test Accuracy: 91.62%
+        - Test Accuracy: 90.12%
         - Best Classes: Liver, Lungs, Heart
         - Trained on 34,561 medical images
         """)
@@ -316,4 +316,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
