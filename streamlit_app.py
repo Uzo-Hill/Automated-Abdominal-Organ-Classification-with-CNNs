@@ -5,7 +5,6 @@ from PIL import Image
 import torchvision.transforms as transforms
 import matplotlib.pyplot as plt
 import numpy as np
-from medmnist import INFO
 
 # Set page configuration
 st.set_page_config(
@@ -113,7 +112,20 @@ def preprocess_image(image):
 
 def predict_with_confidence(image, model):
     """Make prediction and return all probabilities"""
-    class_names = INFO['organamnist']['label']
+    # OrganAMNIST class labels
+    class_names = {
+        '0': 'Bladder',
+        '1': 'Femur-left',
+        '2': 'Femur-right',
+        '3': 'Heart',
+        '4': 'Kidneys',
+        '5': 'Liver',
+        '6': 'Lungs',
+        '7': 'Pelvis',
+        '8': 'Spleen',
+        '9': 'Pancreas',
+        '10': 'Sacrum'
+    }
     
     with torch.no_grad():
         output = model(image)
@@ -157,7 +169,20 @@ def main():
         """)
         
         st.header("🎯 Supported Organs")
-        class_names = INFO['organamnist']['label']
+        # OrganAMNIST class labels
+        class_names = {
+            '0': 'Bladder',
+            '1': 'Femur-left',
+            '2': 'Femur-right',
+            '3': 'Heart',
+            '4': 'Kidneys',
+            '5': 'Liver',
+            '6': 'Lungs',
+            '7': 'Pelvis',
+            '8': 'Spleen',
+            '9': 'Pancreas',
+            '10': 'Sacrum'
+        }
         for i in range(11):
             with st.container():
                 st.markdown(f'<div class="organ-card">{class_names[str(i)]}</div>', unsafe_allow_html=True)
@@ -291,5 +316,4 @@ def main():
                 caption="Reference: Human organ locations in axial view", use_column_width=True)
 
 if __name__ == "__main__":
-
     main()
