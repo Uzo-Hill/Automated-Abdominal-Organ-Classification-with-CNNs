@@ -170,22 +170,21 @@ def main():
         
         st.header("🎯 Supported Organs")
         # OrganAMNIST class labels
-        class_names = {
-            '0': 'Bladder',
-            '1': 'Femur-left',
-            '2': 'Femur-right',
-            '3': 'Heart',
-            '4': 'Kidneys',
-            '5': 'Liver',
-            '6': 'Lungs',
-            '7': 'Pelvis',
-            '8': 'Spleen',
-            '9': 'Pancreas',
-            '10': 'Sacrum'
-        }
-        for i in range(11):
-            with st.container():
-                st.markdown(f'<div class="organ-card">{class_names[str(i)]}</div>', unsafe_allow_html=True)
+        organs_list = [
+            'Bladder',
+            'Femur-left',
+            'Femur-right',
+            'Heart',
+            'Kidneys',
+            'Liver',
+            'Lungs',
+            'Pelvis',
+            'Spleen',
+            'Pancreas',
+            'Sacrum'
+        ]
+        for organ in organs_list:
+            st.write(f"• {organ}")
         
         st.header("ℹ️ Instructions")
         st.write("""
