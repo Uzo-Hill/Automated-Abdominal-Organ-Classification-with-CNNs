@@ -297,7 +297,7 @@ train_losses, val_accuracies = train_simple_model(
     model, train_loader, val_loader, criterion, optimizer, epochs=20
 )
 ```
-![Sample Images](https://github.com/Uzo-Hill/Automated-Abdominal-Organ-Classification-with-CNNs/blob/main/project%20image/Training.PNG)
+![Sample Images](https://github.com/Uzo-Hill/Automated-Abdominal-Organ-Classification-with-CNNs/blob/main/project%20image/Model_Training.PNG)
 
 
 ---
@@ -323,7 +323,7 @@ The best model was loaded and tested on unseen data.
 
 Test Accuracy: 90.12%
 
-![Training Loss&vaidation accuracy](https://github.com/Uzo-Hill/Automated-Abdominal-Organ-Classification-with-CNNs/blob/main/project%20image/Classification_Report.PNG)
+![Training Loss&vaidation accuracy](https://github.com/Uzo-Hill/Automated-Abdominal-Organ-Classification-with-CNNs/blob/main/project%20image/Mode_Accuracy_Evaluation.PNG)
 
 
 ![Training Loss&vaidation accuracy](https://github.com/Uzo-Hill/Automated-Abdominal-Organ-Classification-with-CNNs/blob/main/project%20image/Confusion_Matrix.PNG)
