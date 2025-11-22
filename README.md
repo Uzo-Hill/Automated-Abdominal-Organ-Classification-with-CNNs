@@ -305,7 +305,7 @@ train_losses, val_accuracies = train_simple_model(
 
 The model converged smoothly:
 
-- Loss: 0.6375 → 0.0135
+- Loss: 0.6375 → 0.0118
 
 - Validation Accuracy: 95.59% → 98.41%
 
