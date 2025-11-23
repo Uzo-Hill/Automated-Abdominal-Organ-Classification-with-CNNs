@@ -134,6 +134,9 @@ def visualize_samples(dataset, title="Dataset Samples"):
 
 visualize_samples(train_dataset, "OrganAMNIST Training Samples")
 ```
+![Sample Images](https://github.com/Uzo-Hill/Automated-Abdominal-Organ-Classification-with-CNNs/blob/main/project%20image/Class_Names.PNG)
+
+
 
 ![Sample Images](https://github.com/Uzo-Hill/Automated-Abdominal-Organ-Classification-with-CNNs/blob/main/project%20image/Image_Samples.PNG)
 
