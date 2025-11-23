@@ -22,7 +22,7 @@ It covers the full machine-learning workflow:
 
 - Deployment-ready pipeline
 
-The model achieves ~98% validation accuracy and 91.62% test accuracy.
+The model achieves ~98% validation accuracy and 9o.12% test accuracy.
 
 ---
 ## Dataset
